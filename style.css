@@ -1,0 +1,83 @@
+*{
+    box-sizing : border-box;
+    padding : 0;
+    margin: 0;
+}
+
+body{
+    background-color:rgb(157, 121, 193);
+    color:ivory;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    color:black
+}
+
+img{
+    height: 100;
+    width: 100;
+    object-fit: contain;
+    
+}
+
+address{
+    font-style: normal;
+}
+
+* header{
+    margin: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(245, 248, 204)
+}
+
+main{
+    padding: 1rem 1rem 2rem;
+}
+
+footer{
+    padding: 1rem;
+    background-color:white;
+    color: black;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.main-menu {
+    position:relative
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position:relative;
+    user-select:none;
+}
+
+.menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position:absolute;
+}
+
+.resize{
+    width: 400px;
+    height: auto;
+}
