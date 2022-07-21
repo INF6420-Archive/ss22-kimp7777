@@ -58,6 +58,16 @@ nav a {
     text-decoration: underline;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .main-menu {
     position:relative;
     display: flex;
@@ -85,7 +95,7 @@ nav a {
 
 .menu-icon .navicon:before,
 .menu-icon .navicon:after{
-    background: #333;
+    background: rgb(255, 249, 249);
     content: "";
     display: block;
     height: 100%;
@@ -153,18 +163,18 @@ nav a {
 
 .p1 {
     text-align: left;
-    background-color: rgb(245, 248, 204)
+    background-color: rgb(247, 204, 248)
 }
 
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #501180;
     padding: 20px 10px;
   }
   
   .header a {
     float: left;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -187,7 +197,7 @@ nav a {
   
   
   .header a.active {
-    background-color: dodgerblue;
+    background-color: rgb(200, 151, 238);
     color: white;
   }
   
@@ -205,6 +215,11 @@ nav a {
     }
     .header-right {
       float: none;
+    }
+    .logo-books {
+      width: 320px;
+      height: 320px;
+      max-width: 100%;
     }
   }
 @media screen and (min-width: 768px) {
@@ -294,4 +309,9 @@ textarea{
   .error-message{
     color:rgb(117, 6, 6);
     margin: -1em 0 1.5em;
+  }
+
+  .logo{
+    width: .40%;
+    height: 40%
   }
